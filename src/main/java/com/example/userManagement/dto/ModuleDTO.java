@@ -1,7 +1,5 @@
 package com.example.userManagement.dto;
 
-import com.example.userManagement.models.Role;
-
 import java.util.Date;
 import java.util.Set;
 
@@ -15,7 +13,6 @@ public class ModuleDTO {
     private String modifiedBy;
     private Date modifiedDate;
     private  String password;
-    private Set<Role> roleList;
 
     // Getters and setters
 
@@ -24,17 +21,11 @@ public class ModuleDTO {
         return password;
     }
 
-    public Set<Role> getRoleList() {
-        return roleList;
-    }
 
     public void setPassword(String password) {
         this.password = password;
     }
 
-    public void setRoleList(Set<Role> roleList) {
-        this.roleList = roleList;
-    }
 
     public String getName() {
         return name;

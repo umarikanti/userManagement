@@ -16,7 +16,6 @@ public class User {
     private String mobileNumber;
     private String description;
     private  String password;
-    private Set<Role> roleList;
 
 
     // Getters and Setters
@@ -25,17 +24,11 @@ public class User {
         this.password = password;
     }
 
-    public void setRoleList(Set<Role> roleList) {
-        this.roleList = roleList;
-    }
 
     public String getPassword() {
         return password;
     }
 
-    public Set<Role> getRoleList() {
-        return roleList;
-    }
 
     public Long getId() {
         return id;
